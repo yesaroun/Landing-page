@@ -52,23 +52,23 @@ $(function () {
 });
 
 // 버튼 움직임 위치
-$(window).on('scroll resize', function () {
-    var scrollPos = 0;
-    scrollPos = $(document).scrollTop();
-    const height = $(window).innerHeight();
-    fix();
-
-    function fix() {
-        if (scrollPos > height * 8.2 ) {
-            $('.fix .text').addClass('on');
-        } else {
-            $('.fix .text').removeClass('on');
-        }
-        if (scrollPos > 6400) {
-            $('.fix .text').removeClass('on');
-        }
-    }
-});
+// $(window).on('scroll resize', function () {
+//     var scrollPos = 0;
+//     scrollPos = $(document).scrollTop();
+//     const height = $(window).innerHeight();
+//     fix();
+//
+//     function fix() {
+//         if (scrollPos > height * 8.2 ) {
+//             $('.fix .text').addClass('on');
+//         } else {
+//             $('.fix .text').removeClass('on');
+//         }
+//         if (scrollPos > 6400) {
+//             $('.fix .text').removeClass('on');
+//         }
+//     }
+// });
 
 
 // nav
