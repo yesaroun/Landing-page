@@ -55,10 +55,11 @@ $(function () {
 $(window).on('scroll resize', function () {
     var scrollPos = 0;
     scrollPos = $(document).scrollTop();
+    const height = $(window).innerHeight();
     fix();
 
     function fix() {
-        if (scrollPos > 5900) {
+        if (scrollPos > height * 8.2 ) {
             $('.fix .text').addClass('on');
         } else {
             $('.fix .text').removeClass('on');
